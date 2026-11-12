@@ -1,0 +1,26 @@
+{
+  "name": "KAPOMKA-DEVICE",
+  "version": "0.1.0",
+  "description": "<DEVICE> <what it measures> (<BUS>). Written from the datasheet.",
+  "keywords": "<device>, <bus>, sensor, esp32, kapomka",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KAPOMKA/KAPOMKA-DEVICE.git"
+  },
+  "authors": [
+    {
+      "name": "KAPOMKA",
+      "url": "https://kapomka.com",
+      "maintainer": true
+    }
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/KAPOMKA/KAPOMKA-DEVICE",
+  "frameworks": "arduino",
+  "platforms": "*",
+  "headers": "KAPOMKA_DEVICE.h",
+  "export": {
+    "exclude": ["extras", ".github"]
+  },
+  "examples": ["examples/*/*.ino"]
+}

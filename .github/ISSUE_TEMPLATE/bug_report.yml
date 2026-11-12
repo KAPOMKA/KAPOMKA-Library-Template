@@ -1,0 +1,56 @@
+name: แจ้งปัญหา / Bug report
+description: ไลบรารีทำงานผิด อ่านค่าไม่ได้ หรือคอมไพล์ไม่ผ่าน
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ขอบคุณที่แจ้งปัญหา กรอกให้ครบจะช่วยให้แก้ได้เร็วขึ้น
+        **ห้ามแปะรหัส WiFi / MQTT / token ลงในนี้**
+  - type: input
+    id: version
+    attributes:
+      label: เวอร์ชันไลบรารี / Library version
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: board
+    attributes:
+      label: บอร์ด / Board
+      options: [ESP32, ESP32-S3, ESP32-C3, Arduino UNO/Nano, อื่น ๆ / other]
+    validations:
+      required: true
+  - type: input
+    id: core
+    attributes:
+      label: Arduino core / PlatformIO platform version
+      placeholder: "esp32 3.0.7 / espressif32 6.9.0"
+  - type: dropdown
+    id: sensor
+    attributes:
+      label: รุ่นเซนเซอร์ / Sensor
+      options: [รุ่นที่ใช้ / model used, ไม่แน่ใจ / not sure]
+  - type: textarea
+    id: wiring
+    attributes:
+      label: การต่อสาย / Wiring
+      description: ขา SDA/SCL ที่ใช้ ไฟเลี้ยง 3.3V หรือ 5V มีตัวต้านทาน pull-up ไหม
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: เกิดอะไรขึ้น และคาดว่าควรเป็นอย่างไร / What happened vs expected
+    validations:
+      required: true
+  - type: textarea
+    id: code
+    attributes:
+      label: โค้ดสั้นที่สุดที่ทำให้เกิดปัญหา / Minimal code
+      render: cpp
+  - type: textarea
+    id: log
+    attributes:
+      label: ข้อความจาก Serial Monitor / Serial output (รวมค่า errorString())
+      render: text

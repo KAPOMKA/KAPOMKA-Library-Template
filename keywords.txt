@@ -1,0 +1,24 @@
+#######################################
+# Syntax Coloring Map  KAPOMKA_DEVICE
+#######################################
+
+# Datatypes (KEYWORD1)
+KAPOMKA_DEVICE	KEYWORD1
+Error	KEYWORD1
+
+# Methods and Functions (KEYWORD2)
+begin	KEYWORD2
+read	KEYWORD2
+startMeasurement	KEYWORD2
+update	KEYWORD2
+isMeasuring	KEYWORD2
+isConnected	KEYWORD2
+getValueUnit	KEYWORD2
+lastError	KEYWORD2
+errorString	KEYWORD2
+setTimeout	KEYWORD2
+rawToValue	KEYWORD2
+
+# Constants (LITERAL1)
+KAPOMKA_DEVICE_VERSION	LITERAL1
+DEFAULT_ADDRESS	LITERAL1

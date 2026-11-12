@@ -1,0 +1,20 @@
+name: ขอฟีเจอร์ / Feature request
+description: เสนอความสามารถใหม่ หรือตัวอย่างใหม่
+labels: [enhancement]
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: อยากให้ทำอะไรได้ / What do you need?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: ใช้ในงานอะไร / Use case
+  - type: checkboxes
+    id: pr
+    attributes:
+      label: ช่วยทำเอง / Contribution
+      options:
+        - label: ผมจะลองส่ง pull request เอง / I will try to send a PR

@@ -1,0 +1,13 @@
+.pio/
+.vscode/
+build/
+extras/host-test/build/
+*.o
+*.bin
+*.elf
+.DS_Store
+Thumbs.db
+# never commit secrets / ห้าม commit ความลับ
+secrets.h
+*_secret*
+.env
